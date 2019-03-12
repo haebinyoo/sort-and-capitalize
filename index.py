@@ -1,3 +1,15 @@
-Python 2.7.15 (v2.7.15:ca079a3ea3, Apr 30 2018, 16:22:17) [MSC v.1500 32 bit (Intel)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> 
+f = raw_input('Which file do you want?')
+file = open(f,'r')
+
+print file.read()
+
+file.close()
+
+file = open(f,'w') 
+ 
+file.write('Hello World\n') 
+file.write('This is our new text file\n') 
+file.write('and this is another line.\n') 
+file.write('Why? Because we can.\n') 
+ 
+file.close() 
