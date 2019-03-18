@@ -1,3 +1,29 @@
-Python 2.7.15 (v2.7.15:ca079a3ea3, Apr 30 2018, 16:22:17) [MSC v.1500 32 bit (Intel)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> 
+f = raw_input('Which file do you want?')
+file = open(f,'r')
+
+print file.read()
+
+
+d1a = input ("What do you want to do?:\n\
+    1)Sort alphabetically by first name\n\
+    2)Sort alphabetically by last name\n\
+    3)Sort by total length\n\
+    4)Reverse the list\n\
+    5)Correctly capitalize the list\n\
+    [1/2/3/4/5]: ")
+if d1a == "1":
+    lines = file.readlines()
+    lines.sort()
+elif d1a == "2":
+    print ("You approach the stables.")
+elif d1a == "3":
+    print ("You approach the stables.")
+elif d1a == "4":
+    print ("You approach the stables.")
+elif d1a == "5":
+    print ("You approach the stables.")
+
+        
+
+file.close()
+
