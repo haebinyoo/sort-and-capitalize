@@ -1,8 +1,9 @@
 f = raw_input('Which file do you want?')
 file = open(f,'r')
-##print file.readlines()
 list1 = []
 list1 = file.readlines()
+print list1
+list1 = [x.strip() for x in list1]
 print list1
 ##file = open(f,'w')
 ##print("1. Sort alphabetically by first name")
