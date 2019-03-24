@@ -15,7 +15,6 @@ print("5. Capitalize the list")
 inp = int(input("What would you like to do?"))
 if inp==1:
         list1.sort()
-        print list1
         [file.write(x + '\n') for x in list1]
 elif inp==2:
         list1.sort(key=lambda x: x.split(" ")[-1].lower()) 
@@ -26,10 +25,10 @@ elif inp==3:
 elif inp==4:
         list1.reverse()
         [file.write(x + '\n') for x in list1]
-##elif inp==5:
-##        [file.write(x + '\n') for x in list1]
+elif inp==5:
+        [file.write(x + '\n') for x in list1]
         
 else:
-        print file.write("Invalid Request Enter 1-5")
+        print ("Invalid Request Enter 1-5")
                
 file.close()
