@@ -20,8 +20,9 @@ if inp==1:
 elif inp==2:
         list1.sort(key=lambda x: x.split(" ")[-1].lower()) 
         [file.write(x + '\n') for x in list1]
-##elif inp==3:
-##        [file.write(x + '\n') for x in list1]
+elif inp==3:
+        list1.sort(key=len)
+        [file.write(x + '\n') for x in list1]
 ##elif inp==4:
 ##        [file.write(x + '\n') for x in list1]
 ##elif inp==5:
