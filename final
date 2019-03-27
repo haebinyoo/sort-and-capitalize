@@ -1,1 +1,6 @@
-
+f = raw_input('Which file do you want?')
+file = open(f,'r')
+list1 = []
+list1 = file.readlines()
+list1 = [x.strip() for x in list1]
+list1 = [x.title() for x in list1]
