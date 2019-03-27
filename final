@@ -21,3 +21,6 @@ elif inp==2:
 elif inp==3
         list1.sort(key=len)
         [file.write(x + '\n') for x in list1]
+elif inp==4:
+        list1.reverse()
+        [file.write(x + '\n') for x in list1]
