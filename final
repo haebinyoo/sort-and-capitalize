@@ -25,5 +25,8 @@ elif inp==4:
         list1.reverse()
         [file.write(x + '\n') for x in list1]
 elif inp==5:
-
         [file.write(x + '\n') for x in list1]
+else:
+        print ("Invalid Request Enter 1-5")
+               
+file.close()
